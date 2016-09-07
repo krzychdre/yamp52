@@ -1,0 +1,33 @@
+{include file="header.html"}
+{$test_var}
+	
+	<form action="{$projectUri}/Test/action" method="POST" name="test">
+	<table>
+		<tr>
+			<td>
+				First field:
+			</td>
+			<td>
+				<input type="text" name="test[sometext]" value="{$test.sometext}" {tip trigger="sometext"}/>
+			</td>
+		</tr>
+		<tr>
+			<td>Second field:</td>
+			<td>
+				<input type="text" name="test[someother]" value="{$test.someother}" {tip trigger="someother"}/>			
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="right">
+				<input type="submit" value="Submit"/>
+			</td>
+		</tr>
+	</table>
+
+
+<p>
+Result of call for testMethod: <b>{$result}</b>
+</p>
+
+	</form>
+{include file="footer.html"}

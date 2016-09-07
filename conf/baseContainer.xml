@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+ 
+<container xmlns="http://symfony-project.org/2.0/container">
+
+ <!-- these are needed for sfDependencyInjection -->
+    <imports>
+        <import resource="yamp52.ini" class="sfServiceContainerLoaderFileIni" />
+    </imports>
+ 
+    <parameters>
+        <parameter key="session.sessid">YAMP52_SESS_ID</parameter>
+    </parameters>
+  
+
+    <services>
+	
+	<!-- all Classes which has annotations for IoC has to be defined here -->
+  
+        <service id="Session" class="Session" shared="true">
+            <argument>%session.sessid%</argument>
+        </service>
+   	
+        <service id="Configuration" class="Configuration" shared="true">
+            <!-- www.dir of yamp52 -->
+            <argument>%www.dir%</argument>
+            <!-- yamp configuration files (.ini) -->
+            <argument type="collection">
+                <argument>conf/yamp52.ini</argument>
+            </argument>
+        </service>
+   	
+        <service id="ConnectionFactory" class="ConnectionFactory" shared="true"/>
+        
+        <service id="smarty" class="SmartyConfig" shared="true">
+            <argument>lib/smarty-plugins</argument>
+            <argument>templates</argument>
+            <argument>templates/templates_compiled/</argument>
+            <argument>false</argument>
+        </service>
+	
+        <service id="dispatcher" class="DispatcherController" shared="true">
+            <argument>%www.uri%</argument>
+            <argument type="collection">
+		
+                <argument type="collection">
+                    <argument key="resource">resources</argument>
+                    <argument key="directory">%www.dir%/</argument>
+                </argument>
+			
+            </argument>
+            <argument>%www.production%</argument>
+        </service>
+
+<!-- security -->
+        <service id="AuthorizationService" class="Authorization" shared="true"/>
+        <service id="AuthenticationService" class="Authentication" shared="true"/>
+        <service id="SecurityContainer" class="SecurityContainer" shared="true"/>
+
+        <service id="ErrorHandler" class="ErrorHandler" shared="true"/>
+	
+        <service id="FlowController" class="FlowController" shared="false"/>
+
+<!-- kontener 'globalnych' zmiennych przekazywanych do Smarty -->	
+        <service id="GlobalVarContainer" class="SmartyGlobalVarContainer" shared="true"/>
+
+<!-- kontrolery akcji -->
+
+        <service id="MainFlowController" class="MainFlowController" shared="false"/>
+        <service id="TestFlowController" class="TestFlowController" shared="false"/>
+        <service id="AuthenticateFlowController" class="AuthenticateFlowController" shared="false"/>
+
+
+	
+    </services>
+</container>

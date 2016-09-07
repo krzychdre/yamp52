@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+ 
+<container xmlns="http://krzych.eu/1.0/aop_container">
+
+  <blacklist>
+
+	<entry>lib/yamp/aop</entry>
+	<entry>lib/yamp/IoC</entry>
+	<entry>lib/yamp/security</entry>
+	<entry>lib/doctrine-models</entry>
+	<entry>lib/vendor/addendum</entry>
+	<entry>lib/vendor/sfDependencyInjection</entry>
+	<entry>lib/vendor/smarty3</entry>
+
+
+  </blacklist>
+ 
+  <advices>
+	
+<!--	<advice pattern=".*->set.*(.*)" when="before" class="" method="l" params="$_1"/> -->
+	  	
+  </advices>
+</container>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://krzych.eu/1.0/aop_container" targetNamespace="http://krzych.eu/1.0/aop_container" elementFormDefault="qualified">
+  <xs:element name="container" type="container" />
+
+  <xs:complexType name="container">
+    <xs:sequence>
+      <xs:element name="blacklist" type="blacklist" minOccurs="0" maxOccurs="1" />
+      <xs:element name="advices" type="advices" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="blacklist">
+ 	<xs:sequence>
+ 		<xs:element name="entry" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+ 	</xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="advices">
+    <xs:sequence>
+      <xs:element name="advice" type="advice" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="advice"> 
+    <xs:attribute name="pattern" type="xs:string" />
+    <xs:attribute name="when" type="pointcutWhen" />
+    <xs:attribute name="class" type="xs:string" />
+    <xs:attribute name="method" type="xs:string" />
+    <xs:attribute name="params" type="xs:string" />
+  </xs:complexType>
+ 
+ <xs:simpleType name="pointcutWhen">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="before" />
+      <xs:enumeration value="after" />
+      <xs:enumeration value="around" />
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,152 @@
+/**
+
+	This css file comes from Wordpress
+
+*/
+html {
+	background-color: #f7f6f1;
+}
+
+* html input,
+* html .widget {
+    border-color: #8cbdd5;
+}
+
+textarea,
+input,
+select {
+	border-color: #dfdfdf;
+}
+
+input[readonly] {
+	background-color: #eee;
+}
+
+
+body,
+#wpbody,
+.form-table .pre {
+	color: #333;
+}
+
+input.disabled,
+textarea.disabled {
+	background-color: #ccc;
+}
+
+.widget .widget-top,
+.postbox h3,
+.stuffbox h3 {
+	background: #d5e6f2 url("../images/blue-grad.png") repeat-x left top;
+	text-shadow: #fff 0 1px 0;
+}
+
+.submit {
+	border-color: #8cbdd5;
+}
+
+#wpbody-content #media-items .describe {
+	border-top-color: #dfdfdf;
+}
+
+.button,
+.button-secondary,
+.submit input,
+input[type=button],
+input[type=submit] {
+	border-color: #dfdfdf;
+	color: #464646;
+}
+
+.button:hover,
+.button-secondary:hover,
+.submit input:hover,
+input[type=button]:hover,
+input[type=submit]:hover {
+	color: #000;
+	border-color: #adaca7;
+}
+
+a:hover {
+	color: #d54e21;
+}
+
+
+
+a {
+	color: #1c6280;
+}
+
+
+input.readonly, textarea.readonly {
+	background-color: #ddd;
+}
+
+
+#edit-slug-box strong,
+.tablenav .displaying-num,
+#submitted-on {
+	color: #777;
+}
+
+#footer,
+#footer-upgrade {
+	background: #1d507d;
+	color: #b6d1e4;
+}
+
+#media-items {
+	border-color: #dfdfdf;
+}
+
+.checkbox,
+.side-info,
+.plugins tr,
+.postbox {
+	background-color: #fff;
+}
+
+.widget,
+#widget-list .widget-top,
+.postbox,
+#titlediv,
+#poststuff .postarea,
+.stuffbox {
+	border-color: #dfdfdf;
+}
+
+.widget,
+.postbox {
+	background-color: #fff;
+}
+
+#wphead {
+	background-color: #1d507d;
+}
+
+body.login {
+	border-top-color: #093e56;
+}
+
+#wphead h1 a {
+	color: #fff;
+}
+
+#user_info {
+	color: #b6d1e4;
+}
+
+#user_info a:link,
+#user_info a:visited,
+#footer a:link,
+#footer a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+#user_info a:hover,
+#user_info a:active,
+#footer a:hover,
+#footer a:active  {
+	text-decoration: underline;
+}

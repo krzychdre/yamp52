@@ -1,0 +1,508 @@
+/**
+
+	This css file comes from Wordpress
+
+*/
+div.postbox div.inside {
+	margin: 10px;
+	position: relative;
+}
+
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	/* padding: 0; */
+	border: 0;
+	outline: 0;
+	/*	font-size: 100%;
+	vertical-align: baseline; */
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* 2 column liquid layout */
+#wpwrap {
+	height: auto;
+	min-height: 100%;
+	width: 100%;
+}
+
+#wpcontent {
+	height: 100%;
+	padding-bottom: 50px;
+}
+
+#wpbody {
+	clear: both;
+	margin-left: 175px;
+}
+
+
+#wpbody-content {
+	float: left;
+	width: 100%;
+}
+
+#footer {
+	clear: both;
+	position: relative;
+	width: 100%;
+}
+
+
+/* utility classes */
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.textleft {
+	text-align: left;
+}
+
+.textright {
+	text-align: right;
+}
+
+.clear {
+	clear: both;
+}
+
+/* include margin and padding in the width calculation of input and textarea */
+input[type="text"],
+input[type="password"],
+textarea {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box; /* ie8 only */
+	box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	vertical-align: middle;
+}
+
+/* styles for use by people extending the WordPress interface */
+html,
+body {
+	height: 100%;
+}
+
+body,
+td,
+textarea,
+input,
+select {
+	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+	font-size: 12px;
+}
+
+p {
+	margin: 1em 0;
+}
+
+textarea,
+input,
+select {
+	margin: 1px;
+	padding: 3px;
+}
+
+h1 {
+	display: block;
+	font-size: 2em;
+	font-weight: bold;
+	margin: .67em 0;
+}
+
+h2 {
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: .83em 0;
+}
+
+h3 {
+	display: block;
+	font-size: 1.17em;
+	font-weight: bold;
+	margin: 1em 0;
+}
+
+h4 {
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 1.33em 0;
+}
+
+h5 {
+	display: block;
+	font-size: 0.83em;
+	font-weight: bold;
+	margin: 1.67em 0;
+}
+
+h6 {
+	display: block;
+	font-size: 0.67em;
+	font-weight: bold;
+	margin: 2.33em 0;
+}
+
+.wrap h2 {
+	font: italic normal normal 24px/29px Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+	margin: 0;
+	padding: 14px 15px 3px 0;
+	line-height: 35px;
+	text-shadow: rgba(255,255,255,1) 0px 1px 0px;
+}
+
+
+textarea,
+input,
+select {
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="image"] {
+	border: 0 none;
+}
+
+
+.checkbox {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.submit {
+	padding: 1.5em 0;
+	margin: 5px 0;
+	-moz-border-radius: 0 0 3px 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-khtml-border-bottom-left-radius: 3px;
+	-khtml-border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.submit input,
+.button,
+.button-primary,
+.button-secondary,
+.button-highlighted,
+#postcustomstuff .submit input {
+	text-decoration: none;
+	white-space: nowrap;
+	font-size: 11px !important;
+	line-height: 15px;
+	padding: 3px 10px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-khtml-box-sizing: content-box;
+	box-sizing: content-box;
+	background-color: #e9e8e8;
+}
+
+a.button,
+a.button-primary,
+a.button-secondary {
+	line-height: 15px;
+	padding: 3px 10px;
+	white-space: nowrap;
+}
+
+
+/* Admin Header */
+#wphead-info {
+	margin: 0 0 0 15px;
+	padding-right: 15px;
+}
+
+#user_info {
+	float: right;
+	font-size: 12px;
+	line-height: 46px;
+	height: 46px;
+}
+
+#user_info p {
+	margin: 0;
+	padding: 0;
+	line-height: 46px;
+}
+
+#wphead {
+	height: 46px;
+}
+
+
+#header-logo {
+	float: left;
+	margin: 7px 0 0 15px;
+}
+
+#wphead h1 {
+	font: normal 22px Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+	padding: 10px 8px 5px;
+	margin: 0;
+	float: left;
+}
+
+#wphead h1.long-title {
+	font: normal 18px Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+	padding: 12px 10px 5px;
+}
+
+#wphead h1 a:hover {
+	text-decoration:none;
+}
+#wphead h1 a:hover #site-title {
+	text-decoration:underline;
+}
+
+
+/* Admin Footer */
+#footer {
+	margin-top: -45px;
+}
+
+#footer,
+#footer a {
+	font-size: 12px;
+	font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+	font-style: italic;
+}
+
+#footer p {
+	margin: 0;
+	padding: 15px;
+	line-height: 15px;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+.pre {
+	/* http://www.longren.org/2006/09/27/wrapping-text-inside-pre-tags/ */
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.widget .widget-top,
+.postbox h3 {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+
+#poststuff h3,
+.metabox-holder h3 {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 7px 9px;
+	margin: 0;
+	line-height: 1;
+}
+
+.widget,
+.postbox,
+.stuffbox {
+	margin-bottom: 20px;
+	border-width: 1px;
+	border-style: solid;
+	line-height: 1;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.widget .widget-top,
+.postbox h3,
+.postbox h3,
+.stuffbox h3 {
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-khtml-border-top-right-radius: 6px;
+	-khtml-border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+
+.postbox.closed h3 {
+	-moz-border-radius-bottomleft:4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-khtml-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-khtml-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+
+
+/* Global classes */
+
+body.main {
+	min-width: 785px;
+}
+
+
+br.clear {
+	height: 2px;
+	line-height: 2px;
+}
+
+.overdiv {
+	position: absolute;
+	visibility: hidden;
+	z-index: 1000;
+	padding: 3px;
+	border-style: dashed;
+	border-width: 1px;
+	background: #f7f6f1;
+	border-color: #CCC;
+	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+	font-size: 12px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.warn { 
+		background: rgba(255, 152, 00, 0.7); 
+		color: black; 
+		font-weight: bold; 
+		border-style: solid; 
+		border-width: 1px; 
+		border-color: rgb(225, 122, 00); 
+}
+.err { 
+		background: rgba(255, 43, 43, 0.7); 
+		color: white; 
+		font-weight: bold; 
+		border-style: solid; 
+		border-width: 1px; 
+		border-color: rgb(225, 13, 13); 
+}
+.ok	{ 
+		background: rgba(31, 255, 00, 0.7); 
+		color: black; 
+		font-weight: bold; 
+		border-style: solid; 
+		border-width: 1px; 
+		border-color: rgb(1, 225, 00); 
+}
+
+/* tabele - styl */
+.headerClass {
+	background-color: #a9d1ed;
+	text-align: left;
+}
+
+.rowOdd { background-color: #d5e6f2; }
+.rowEven { background-color: #f0f8fd; }
+.rowOdd:hover, .rowEven:hover {	background-color: #fbcf38; }
+
+/* tabela stronicowania richfaces */
+.rich-datascr {
+	background-color: #a9d1ed;
+	-moz-border-radius: 4px 4px 0 0;
+	-khtml-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	width: 100%;
+}
+.dr-dscr-t {
+	background-color: #a9d1ed;
+}
+/* stronicowanie button disabled */
+.dr-dscr-button-dsbld {
+	padding: 4px;
+	color: background;
+	border-color: #CCC;
+}
+/* stronicowanie button inactive */
+.dr-dscr-inact {
+	padding: 4px;
+	border: 1px dashed;
+	border-color: #AAA;
+}
+/* stronicowanie wybrana */
+.dr-dscr-act {
+	padding: 4px;
+	background-color: #fbcf38;
+	border: 1px dashed;
+	border-color: #d9ad16;
+}
+/* stronicowanie niewybrana */
+.dr-dscr-button {
+	padding: 4px;
+}
+
+.dr-dscr-inact:HOVER,
+.dr-dscr-act:HOVER,
+.dr-dscr-button:HOVER {
+	background-color: #fbcf38;
+}

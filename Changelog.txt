@@ -1,0 +1,6 @@
+- moved to Smarty3
+- moved to Doctrine2
+- roles aren't hierarhical now
+- console helper for regenerating entities and proxies with Doctrine2
+- services are injected by reflection (there is no need for magic __set method any more)
+

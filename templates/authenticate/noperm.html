@@ -1,0 +1,13 @@
+{include file="header.html"}
+
+			{if $message}
+				{$message->getHtmlMsg()}
+			{/if}
+	<table width="100%">
+		<tr>
+			<td>
+				<input type="button" onClick="document.location='{$projectUri}/'" value="Return to main page"/>
+			</td>
+		</tr>
+	</table>
+{include file="footer.html"}
